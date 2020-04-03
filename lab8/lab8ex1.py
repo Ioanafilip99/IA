@@ -1,14 +1,11 @@
 from mpl_toolkits import mplot3d
 import matplotlib.pyplot as plt
 from sklearn.linear_model import Perceptron
-
 from sklearn.neural_network import MLPClassifier  # importul clasei
 from sklearn import preprocessing
-
 import numpy as np
 
 
-# ------ exercitiul 1
 def plot3d_data(X, y):
     ax = plt.axes(projection='3d')
     ax.scatter3D(X[ y == -1, 0 ], X[ y == -1, 1 ], X[ y == -1, 2 ], 'b');
